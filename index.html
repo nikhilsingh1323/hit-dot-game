@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aim Trainer Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Aim the Spot!</h1>
+    <p>Time Left: <span id="timer">10</span>s</p>
+    <p>Score: <span id="score">0</span></p>
+    <button id="start-btn">Start Game</button>
+    <div id="play-area"></div>
+  </div>
+
+  <!-- Popup for result -->
+  <div id="result-popup" class="hidden">
+    <div class="popup-content">
+      <h2>Time's Up!</h2>
+      <p>Your score: <span id="final-score">0</span></p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
